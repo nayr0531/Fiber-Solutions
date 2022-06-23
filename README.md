@@ -1,5 +1,5 @@
 # Fiber
-- This is my solution to solve this website design from <a href="https://www.codewell.cc/challenges/fiber-landing-page--608a7e639691700015db16d1" targer="_blank">codewell.cc</a> 
+- This is my solution to solve this website design from <a href="https://www.codewell.cc/challenges/fiber-landing-page--608a7e639691700015db16d1" target="_blank">codewell.cc</a> 
 - To Enhance my front-end skills 
 
 ## Design
@@ -16,7 +16,7 @@
 <img width="414" alt="Sign Up Page - Mobile View" src="https://user-images.githubusercontent.com/107635386/175337252-07b4c1c6-1e76-40e1-aaaf-c46642929ef2.png">
 
 ### Font
-- <a href="https://fonts.google.com/specimen/Inter" targer="_blank">Specimen / Inter</a>
+- <a href="https://fonts.google.com/specimen/Inter" target="_blank">Specimen / Inter</a>
 
 #### Detected Colors
 - #FFFFFF;
