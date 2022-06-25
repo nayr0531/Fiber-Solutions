@@ -1,0 +1,49 @@
+.landing-page {
+  background: $bg-2;
+  display: flex;
+  align-items: center;
+  height: 85vh;
+  .page-introduction {
+    .rating {
+      margin: 1rem 0rem;
+      span {
+        margin-left: 0.5rem;
+        font-weight: 500;
+      }
+    }
+    h1 {
+      font-size: 3.5rem;
+    }
+    p {
+      color: $fc-2;
+      font-size: 1.2rem;
+      margin: 0.5rem 0rem;
+      line-height: 1.7rem;
+    }
+    .btn-free-trial {
+      @include clearbtn;
+      @include btn-free-trial;
+      margin: 1rem 0rem;
+    }
+    a {
+      color: $bg-3;
+      font-weight: 700;
+      margin: 1rem 1.5rem;
+      font-size: 1.2rem;
+    }
+    .features-landing-page {
+      margin: 0.5rem 0rem;
+      display: flex;
+      gap: 1.2rem;
+      div {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+  }
+  .illustration {
+    height: 34rem;
+    width: 34rem;
+  }
+}

@@ -1,11 +1,209 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fbf8f3;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.header h1 {
+  font-size: 1.5rem;
+}
+.header ul {
+  display: flex;
+  list-style-type: none;
+}
+.header ul li a {
+  text-decoration: none;
+  margin: 0 1rem;
+  color: #000000;
+}
+.header .buttons button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0rem 1rem;
+}
+.header .buttons .sign-up {
+  background: #4d13d1;
+  color: #ffffff;
+  padding: 0.9rem 1.3rem;
+  border-radius: 0.3rem;
+}
+
+.landing-page {
+  background: #fbf8f3;
+  display: flex;
+  align-items: center;
+  height: 85vh;
+}
+.landing-page .page-introduction .rating {
+  margin: 1rem 0rem;
+}
+.landing-page .page-introduction .rating span {
+  margin-left: 0.5rem;
+  font-weight: 500;
+}
+.landing-page .page-introduction h1 {
+  font-size: 3.5rem;
+}
+.landing-page .page-introduction p {
+  color: #484849;
+  font-size: 1.2rem;
+  margin: 0.5rem 0rem;
+  line-height: 1.7rem;
+}
+.landing-page .page-introduction .btn-free-trial {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  background: #4d13d1;
+  color: #ffffff;
+  padding: 0.9rem 1.3rem;
+  border-radius: 0.3rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 1rem 0rem;
+}
+.landing-page .page-introduction a {
+  color: #4d13d1;
+  font-weight: 700;
+  margin: 1rem 1.5rem;
+  font-size: 1.2rem;
+}
+.landing-page .page-introduction .features-landing-page {
+  margin: 0.5rem 0rem;
+  display: flex;
+  gap: 1.2rem;
+}
+.landing-page .page-introduction .features-landing-page div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.landing-page .illustration {
+  height: 34rem;
+  width: 34rem;
+}
+
+.why-fiber {
+  padding: 5rem 0rem;
+}
+.why-fiber h3 {
+  color: #4d13d1;
+}
+.why-fiber h1 {
+  font-weight: 700;
+  width: 30rem;
+  line-height: 2.5rem;
+  margin: 0.5rem 0rem;
+}
+.why-fiber .features {
+  display: flex;
+  padding: 2rem 0rem;
+  gap: 2rem;
+}
+.why-fiber .features h4 {
+  margin: 0.5rem 0rem;
+}
+.why-fiber .features p {
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #484849;
+  margin: 1rem 0rem;
+}
+
+.previous-portfolio {
+  display: flex;
+  background: #4d13d1;
+  border-radius: 0.5rem;
+  height: 30rem;
+}
+.previous-portfolio .portfolio-introduction {
+  align-self: center;
+  padding: 3rem;
+}
+.previous-portfolio .portfolio-introduction h2 {
+  color: #ffffff;
+  font-size: 2.3rem;
+}
+.previous-portfolio .portfolio-introduction p {
+  color: #fbf8f3;
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding: 1rem 0rem;
+  line-height: 2rem;
+}
+.previous-portfolio .portfolio-introduction .btn-free-trial {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  background: #4d13d1;
+  color: #ffffff;
+  padding: 0.9rem 1.3rem;
+  border-radius: 0.3rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  background: #ffffff;
+  color: #4d13d1;
+}
+.previous-portfolio img {
+  width: 40rem;
+  height: 25rem;
+  padding: 0rem 3rem 0rem 0rem;
+  align-self: flex-end;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
-  background: #FFFFFF;
+  background: #ffffff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+}
+
+.header {
+  grid-column: 1/-1;
+}
+
+.landing-page {
+  grid-column: 1/-1;
+}
+
+.header,
+.landing-page {
+  padding: 2rem 5%;
+}
+
+.why-fiber {
+  grid-column: 2/3;
+}
+
+.previous-portfolio {
+  grid-column: 2/3;
+}
+
+.testimonials {
+  grid-column: 2/3;
+}
+
+.footer {
+  grid-column: 2/3;
 }

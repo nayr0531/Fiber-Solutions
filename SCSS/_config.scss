@@ -1,14 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-$ff: 'Inter', sans-serif;
-$bg-1: #FFFFFF;
-$bg-2: #FBF8F3;
-$bg-3: #4D13D1;
+$ff: "Inter", sans-serif;
+$bg-1: #ffffff;
+$bg-2: #fbf8f3;
+$bg-3: #4d13d1;
 $fc-1: #000000;
 $fc-2: #484849;
-$fc-3: #6B6B6B;
+$fc-3: #6b6b6b;
 
-
-
-
-
+@mixin clearbtn {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+@mixin btn-free-trial {
+  background: $bg-3;
+  color: $bg-1;
+  padding: 0.9rem 1.3rem;
+  border-radius: 0.3rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}

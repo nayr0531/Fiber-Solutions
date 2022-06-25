@@ -1,12 +1,39 @@
-@import "./config";
+@import "./config", "./header", "./landing-page", "./why-fiber",
+  "./previous-portfolio";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: $ff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $ff;
 }
 
-body{
-    background: $bg-1;
+body {
+  background: $bg-1;
+}
+.container {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+}
+.header {
+  grid-column: 1 / -1;
+}
+.landing-page {
+  grid-column: 1 / -1;
+}
+.header,
+.landing-page {
+  padding: 2rem 5%;
+}
+.why-fiber {
+  grid-column: 2 / 3;
+}
+.previous-portfolio {
+  grid-column: 2 / 3;
+}
+.testimonials {
+  grid-column: 2 / 3;
+}
+.footer {
+  grid-column: 2 / 3;
 }

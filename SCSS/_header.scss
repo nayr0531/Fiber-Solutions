@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $bg-2;
+  position: sticky;
+  top: 0;
+  left: 0;
+  h1 {
+    font-size: 1.5rem;
+  }
+  ul {
+    display: flex;
+    list-style-type: none;
+    li a {
+      text-decoration: none;
+      margin: 0 1rem;
+      color: $fc-1;
+    }
+  }
+  .buttons {
+    button {
+      @include clearbtn;
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin: 0rem 1rem;
+    }
+    .sign-up {
+      background: $bg-3;
+      color: $bg-1;
+      padding: 0.9rem 1.3rem;
+      border-radius: 0.3rem;
+    }
+  }
+}
