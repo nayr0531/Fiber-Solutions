@@ -1,5 +1,5 @@
 @import "./config", "./header", "./landing-page", "./why-fiber",
-  "./previous-portfolio";
+  "./previous-portfolio", "./testimonials", "./footer";
 
 * {
   margin: 0;
@@ -32,8 +32,8 @@ body {
   grid-column: 2 / 3;
 }
 .testimonials {
-  grid-column: 2 / 3;
+  grid-column: 1 / -1;
 }
 .footer {
-  grid-column: 2 / 3;
+  grid-column: 1 / -1;
 }

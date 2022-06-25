@@ -163,6 +163,115 @@
   align-self: flex-end;
 }
 
+.testimonials {
+  padding: 4rem 5% 1rem 5%;
+  margin-bottom: 3rem;
+  overflow-x: auto;
+  display: inline-flex;
+}
+.testimonials::-webkit-scrollbar {
+  height: 1rem;
+}
+.testimonials::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 0.5rem;
+}
+.testimonials::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 0.5rem;
+  margin: 4rem;
+}
+.testimonials:hover::-webkit-scrollbar-thumb {
+  background: #eee2cd;
+}
+.testimonials:hover::-webkit-scrollbar-track {
+  background: #fbf8f3;
+}
+.testimonials .testimonial {
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.3rem;
+  min-width: 28rem;
+  margin-right: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem -0.06rem rgba(0, 0, 0, 0.1);
+}
+.testimonials .testimonial-text {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding: 1rem 0rem;
+}
+.testimonials .testimonial .view-portfolio {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  background: #4d13d1;
+  color: #ffffff;
+  padding: 0.9rem 1.3rem;
+  border-radius: 0.3rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  background: #ffffff;
+  color: #4d13d1;
+  border-radius: 0.3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+.testimonials .testimonial .profile {
+  display: grid;
+  grid-template-columns: 5rem auto;
+  grid-template-rows: 2rem 2rem;
+}
+.testimonials .testimonial .profile img {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  align-self: center;
+  height: 100%;
+}
+.testimonials .testimonial .profile .name {
+  grid-column: 2/-1;
+  grid-row: 1/2;
+  align-self: flex-end;
+  color: #4d13d1;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.testimonials .testimonial .profile .salary {
+  grid-column: 2/-1;
+  grid-row: 2/3;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: #fbf8f3;
+  padding: 3rem 5%;
+}
+.footer .fiber {
+  width: 25rem;
+}
+.footer p {
+  line-height: 1.5rem;
+  padding: 1rem 0rem;
+  text-align: justify;
+}
+.footer p,
+.footer a,
+.footer span {
+  color: #484849;
+  font-size: 1.1rem;
+}
+.footer a {
+  display: block;
+  margin: 0.7rem 0rem;
+}
+.footer .links span {
+  line-height: 2rem;
+}
+.footer .links a {
+  text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -201,9 +310,9 @@ body {
 }
 
 .testimonials {
-  grid-column: 2/3;
+  grid-column: 1/-1;
 }
 
 .footer {
-  grid-column: 2/3;
+  grid-column: 1/-1;
 }

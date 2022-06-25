@@ -1,0 +1,71 @@
+.testimonials {
+  padding: 4rem 5% 1rem 5%;
+  margin-bottom: 3rem;
+  overflow-x: auto;
+  display: inline-flex;
+  &::-webkit-scrollbar {
+    height: 1rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0.5rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 0.5rem;
+    margin: 4rem;
+  }
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background: darken($bg-2, 10%);
+    }
+    &::-webkit-scrollbar-track {
+      background: $bg-2;
+    }
+  }
+  .testimonial {
+    border: 0.1rem solid rgba($fc-1, 0.1);
+    border-radius: 0.3rem;
+    min-width: 28rem;
+    margin-right: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem -0.06rem rgba($fc-1, 0.1);
+    &-text {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      padding: 1rem 0rem;
+    }
+    .view-portfolio {
+      @include clearbtn;
+      @include btn-free-trial;
+      background: $bg-1;
+      color: $bg-3;
+      border-radius: 0.3rem;
+      border: 0.1rem solid rgba($fc-1, 0.3);
+      width: 100%;
+    }
+    .profile {
+      display: grid;
+      grid-template-columns: 5rem auto;
+      grid-template-rows: 2rem 2rem;
+      img {
+        grid-column: 1 / 2;
+        grid-row: 1 / -1;
+        align-self: center;
+        height: 100%;
+      }
+      .name {
+        grid-column: 2 / -1;
+        grid-row: 1 / 2;
+        align-self: flex-end;
+        color: $bg-3;
+        font-weight: 600;
+        font-size: 1.2rem;
+      }
+      .salary {
+        grid-column: 2 / -1;
+        grid-row: 2 / 3;
+      }
+    }
+  }
+}

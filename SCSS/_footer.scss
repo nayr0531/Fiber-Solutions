@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: $bg-2;
+  padding: 3rem 5%;
+  .fiber {
+    width: 25rem;
+  }
+  p {
+    line-height: 1.5rem;
+    padding: 1rem 0rem;
+    text-align: justify;
+  }
+  p,
+  a,
+  span {
+    color: $fc-2;
+    font-size: 1.1rem;
+  }
+  a {
+    display: block;
+    margin: 0.7rem 0rem;
+  }
+  .links {
+    span {
+      line-height: 2rem;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
